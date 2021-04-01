@@ -1,0 +1,946 @@
+/* ---- reset ---- */
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Zilla Slab', serif;
+  color: #185772;
+  overflow-x: hidden; 
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+/* ---- end particles.js container ---- */
+
+/* HEADER */
+#header-nav {
+  padding-top: 20px;
+  background-color: #ffffff;
+  border: 0px;
+  border-radius: 0px;
+}
+
+#logo-img {
+  background: url('../images/nav-bar-logo.PNG') no-repeat;
+  /*background: url('../images/siteLogo/logo-02.png') no-repeat;*/
+  margin: 10px 15px 10px 200px;
+  width: 237px;
+  height: 224px;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+}
+
+.navbar-brand h1{   /* Restaurant's Name */
+  font-size: 1.9em;
+  /*font-weight: bold;*/
+  color: #FFF;
+  text-shadow: 1px 1px 1px #141414;
+  margin-top: 5px;
+  margin-bottom: 0;
+  line-height: .75;
+  letter-spacing: 2px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand p {  /* Koshar Cerification Text */
+  margin-top: 15px;
+  color: #000;
+  /*text-transform: uppercase;*/
+  font-size: 0.7em;
+
+}
+
+.navbar-brand span {  /* Koshar Cerification Alignment */
+  vertical-align: middle;
+}
+
+.navbar-info{
+  float: right;
+  margin-right: 200px;
+  font-size: 1.2em;
+}
+
+.navbar-info .navbar-info-email{
+  float: right;
+}
+
+#info-email{
+  padding-right: 20px;
+}
+
+#nav-list {
+  margin-top: 180px;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+
+#nav-list a {
+  color: #004044;
+  text-align: center;
+  margin-left: 20px;
+}
+
+#nav-list a:hover {
+  background: #DBDDE0;
+}
+
+#nav-list a span {
+  font-size: 1.4em;
+}
+
+.navbar-info .navbar-info-email {
+  padding-right: 18px;
+}
+
+#phone {
+  margin-top: 5px;
+}
+
+#phone a {
+  text-align: right;
+  padding-bottom: 0px;
+}
+
+#phone div {
+  text-align: right;
+  padding-right: 15px;
+  color: #557c3e;
+}
+
+.navbar-header{
+  margin: 10px 0px 20px 0px
+}
+
+.navbar-header button.navbar-toggle, .navbar-header button.navbar-toggle span {
+  border: 1px solid #fff;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  /*background: #EBEDEF; */
+  margin-top: -30px;
+}
+
+/* END HEADER */
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+
+#aboutSection .jumbotron h1 {
+  margin-top: 150px;
+  color: white;
+  font-family:  Helvetica, Arial, sans-serif;
+}
+
+
+#brandSection .center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content : center;
+  align-items : center;
+  flex-wrap : wrap; /* Change the logo position according to devices */
+  column-gap : 15px;
+  row-gap : 15px;
+  width: 80%;
+}
+/* Initial 5 logos in a row with 15px padding*/
+#brandSection .row .column {
+  flex-basis : calc(20% - 15px);
+}
+
+#brandSection .row .column img{
+  max-height: 140px;
+  max-width: 200px;
+  margin: auto;
+}
+
+.sectionTitle { 
+  padding: 100px 20px 20px 20px;
+  margin: 35px 10px 50px 10px;
+  font-size: 4em;
+  font-weight: bold; 
+  color: #185772;
+  letter-spacing: 1.5px;
+}
+
+
+#aboutSection p {
+  width: 1190px;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-right: 300px; */
+  font-size: 1.7em;
+  color: green;
+  line-height: 40px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+
+#productSection .container .row{
+  margin-bottom: 80px;
+}
+
+
+#productSection .container .row .productDetails{
+  font-size: 1.5em;
+  padding: 115px 60px 0px 60px;
+  text-align: justify;
+}
+
+
+#productSection .container .row .productImage{
+  text-align: center;
+
+}
+
+#productSection .container .row .productImage img{
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+  margin: auto;
+
+}
+
+#productSection .container .row #lastProductDetails{
+  padding: 50px 20px 20px 20px;
+}
+
+
+#productSection .container .row .center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#productSection .product-btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content : center;
+  align-items : center;
+  padding: 12px 35px;
+  border: 2px solid #5dc8ac;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear; 
+}
+
+#productSection .product-btn:hover {
+  color: white;
+  background: #5dc8ac; }
+
+
+#serviceSection .container .row {
+  display: flex;
+}
+
+
+#serviceSection .container .row .column {
+  text-align : center;
+  border: 2px solid #145629;
+  border-radius: 0px;
+  padding: 15px;
+  font-size: 1.7em;
+  
+}
+
+#serviceSection .container .row .column img{
+  padding: 20px;
+}
+
+#serviceSection .container .row .column h2 {
+  margin-bottom: 25px;
+}
+
+#serviceSection .container .row .column .serviceDescription {
+    /*text-align: justify;*/
+    display: none;
+    padding: 0px 10px;
+    /*font-size: 5vw;*/
+  }
+
+#clientSection .container .carousel-inner h3{
+  font-style: italic;
+  margin-bottom: 60px;
+  font-size: 28px;
+}
+
+
+.carousel-caption {
+  color: #145629;
+}
+
+
+#clientSection .carousel-control, #clientSection .carousel-indicators{
+  opacity: 0;
+}
+
+
+/*#clientSection .container .row .clientDetails{
+  font-size: 1.4em;
+  padding:30px;
+}
+*/
+#contactSection .row{
+  margin: 40px 0px;
+  color: #145629;
+  
+}
+
+#contactSection .container .row #contact_div {
+  padding: 55px 85px;
+}
+
+
+#contactSection .row h1{
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 35px;
+}
+
+
+#contactSection .row h2{
+  font-size: 1.7em;
+}
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #163A1A;
+  border-top: 0px; 
+  color: white;
+}
+
+.panel-footer div.row {
+  margin-bottom: 30px;
+}
+
+.panel-footer section hr{
+  width: 70%;
+}
+
+
+
+#information h2{
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+#information h3{
+  font-size: 20px;
+  letter-spacing: 0.7px;
+}
+
+#social-media .row .vertical_center {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: auto;
+}
+
+#emailUs{
+  padding: 40px 100px 0px 100px;
+  text-align: center;
+}
+
+#emailUs input, #emailUs textarea, #emailUs button {
+  font-size: 1.4em;
+  margin-bottom: 25px;
+}
+
+#emailUs .form-group .form-control, #sendEmailBtn {
+  border: 1px solid #145629;
+  border-radius: 15px;
+}
+
+#social-media { 
+  margin-top: 20px;
+  padding-left: 0px;
+
+}
+
+#social-media .social-media_col{
+  min-height: 200px;
+  /*padding-right: 30px;*/
+}
+
+#social-media a img{
+  /*padding-right: 30px;*/
+}
+
+#scrollUp {
+  display: none;
+  background: #000000;
+  bottom: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  z-index: 1000;
+  border-radius: 5px; }
+  #scrollUp:hover {
+  background: #ffffff; ;
+  color: #163A1A; 
+}
+ 
+/* END FOOTER */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+  #serviceSection .container, #contactSection .container, .panel-footer .container{
+    width: 1300px;
+  }
+  
+}
+
+/********** Mediam- Large devices only **********/
+@media (min-width: 1200px) and (max-width: 1500px) {
+  /* HEADER PAGE */
+  
+  #logo-img {
+    margin: 10px 15px 10px 100px;
+  }
+
+  #nav-list {
+    font-size: 1.1em;
+    letter-spacing: 3px;
+  }
+
+  .navbar-info {
+    margin-right: 80px;
+  }
+  
+  #productSection .container .row .productDetails{
+      padding: 115px 60px 0px;
+  }
+
+  #serviceSection .container .row {
+    max-width: 1050px;
+   margin: 15px auto;
+  }
+  
+}
+
+/********** Mediam devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* HEADER PAGE */
+
+  #logo-img {
+    background: url('../images/nav-bar-logo-medium.png') no-repeat;
+    /*background: url('../images/siteLogo/logo-02.png') no-repeat;*/
+    margin: 25px 15px 10px 50px;
+    width: 260px;
+    height: 121px;
+  }
+  
+  .navbar-info {
+    margin-right: 40px;
+    font-size: 1.1em;
+  }
+
+  #aboutSection p {
+    width: 970px;
+
+
+  }
+
+  #aboutVideo iframe {
+    height: 450px;
+  }
+
+  .sectionTitle {
+    font-size: 3.5em;
+  }
+
+  #productSection #product_div {
+    font-size: 0.9em;
+  }
+
+  #productSection .container .row .productDetails {
+      
+      padding: 95px 25px 10px 25px;
+      
+  }
+
+  #productSection .container .row .productImage img {
+    max-width: 425px;
+    max-height: 425px;
+  }
+
+  #serviceSection .container .row .column h2 {
+    /*margin-bottom: 25px;*/
+    font-size: 1.1em;
+  }
+
+  #serviceSection .container .row .column .serviceDescription {
+    /* text-align: justify; */
+    /* padding: 0px 10px; */
+    font-size: 0.9em;
+  }
+
+  #clientSection .container .carousel-inner h3{
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  #contactSection .container .row #contact_div {
+    padding: 65px 30px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar-info  .navbar-info-email {
+      /* padding-right: 18px; */
+    text-align: right;
+    padding-right: 30px;
+  }
+
+  .navbar-info {
+    float: none;
+    max-width: 604px;
+    margin: 0px auto;
+    font-size: 1.1em;
+  }
+
+  #logo-img {
+    background: url(../images/nav-bar-logo-small.png) no-repeat;
+    margin: 0px 0px 15px 0px;
+    width: 225px;
+    height: 104px;
+  }
+
+  #info-email {
+    padding-right: 0px;
+  }
+
+  #nav-list {
+    margin-top: 0px;
+    font-size: 1.0em;
+    letter-spacing: 1px;
+  }
+
+  #aboutSection p {
+    width: 750px;
+    font-size: 1.4em;
+    line-height: 32px;
+  }
+  
+  #aboutVideo iframe {
+    height: 350px;
+  }
+
+  .sectionTitle {
+    font-size: 3em;
+  }
+
+  #productSection #product_div {
+    font-size: 0.75em;
+  }
+
+  #productSection .container .row .productDetails {
+      /* font-size: 1.7em; */
+      padding: 55px 25px 10px 18px;
+      /* text-align: justify; */
+  }
+
+  #productSection .container .row .productImage img {
+    max-width: 340px;
+    max-height: 340px;
+  }
+
+  #serviceSection .container .row {
+    display: block;
+    margin: 30px 50px;
+  }
+
+  #serviceSection .container .row .column {
+    min-height: 568px;
+  }
+
+
+  #serviceSection .container .row .column h2 {
+    /*margin-bottom: 25px;*/
+    font-size: 1.1em;
+  }
+
+  #serviceSection .container .row .column .serviceDescription {
+    /* text-align: justify; */
+    /* padding: 0px 10px; */
+    font-size: 0.85em;
+  }
+
+  #clientSection .container .carousel-inner h3{
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  #contactSection .container .row #contact_div {
+    padding: 40px 50px;
+  }
+}
+
+
+
+/********** Extra Small devices only **********/
+@media (max-width: 767px ) {
+
+  #header-nav{
+    margin: 0px 0px;
+    padding-left: 15px; 
+    padding-right: 15px; 
+    background-color: #379C41;
+  }
+
+  #logo-img-mobile{
+    background: url('../images/siteLogo/225X104_white.png') no-repeat;
+    height: 104px;
+    width: 233px;
+  }
+
+  .navbar-info {
+    float: none;
+    margin-right: 0px;
+    font-size: 1.1em;
+  }
+
+  #nav-list {
+    margin-top: 0px;
+    font-size: 1.1em;
+    letter-spacing: 1.5px;
+  }
+
+  #nav-list a {
+    color: #FFF;
+    text-align: center;
+  }
+
+  #nav-list a:hover {
+    color: #004044;
+  }
+  
+  #nav-list .active a {
+    color: #004044;
+  }
+  
+
+  .navbar-brand {
+    padding: 0px 15px 0px 45px;
+    height: 105px; 
+  }
+
+  .navbar-brand h1{   /* Restaurant's Name */
+
+    padding-top: 10px;
+    font-size: 5vw;   /* 1 vm = 1% of the Viewdevice width and its responsive */
+  }
+
+  .navbar-toggle{
+    margin-right: 40px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    background-color: #0C2B25;
+    /*border: 2px solid #fff;*/
+    color: white;
+    margin: 4px 10px;
+    padding: 10px;
+  }
+  
+  #call-btn .glyphicon{
+    margin-right: 10px;
+  }
+
+  .sectionTitle { 
+    padding: 0px;
+    margin: 70px 10px 35px 10px;  
+    font-size: 6vw;
+    letter-spacing: 1.5px;
+  }
+
+  #aboutSection p {
+    width: auto;
+    padding: 0px 35px;
+    font-size: 3vw;
+    letter-spacing: 1px;
+    line-height: 4vw;
+  }
+
+  #aboutVideo iframe {
+    height: 280px;
+  }
+
+  #brandSection .row .column img {
+    /*max-height: 140px;*/
+    max-width: 120px;
+  }
+
+  #productSection {
+    padding: 0px 25px;
+  }
+
+  #productSection #product_div {
+    font-size: 0.75em;
+  }
+
+  #productSection .container .row {
+    margin-bottom: 30px;
+  }
+
+  #productSection .productImage{
+    padding: 40px 60px 40px 60px;
+  }
+
+  #productSection .container .row .productImage img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+
+
+  #productSection .container .row .productDetails {
+      /* font-size: 1.7em; */
+      padding: 17px 25px 10px 18px;
+      /* text-align: justify; */
+  }
+
+  #serviceSection .container .row {
+    display: block;
+    margin: 30px 100px;
+  }
+
+  #serviceSection .container .row .column {
+    min-height: 0px;
+  }
+
+  #serviceSection .container .row .column img {
+    padding: 0px 30px;
+  }
+
+  #clientSection .container .carousel-inner h3{
+    margin-bottom: 0px;
+    font-size: 2.7vw;
+  }
+
+  /*#clientSection .container #carousel_div .carousel-caption {
+    top: 55%;
+    color: #145629;
+  }
+*/
+  .panel-footer div.row {
+    text-align: center;
+  }
+
+  #emailUs {
+    margin: 50px 55px 0px;
+    padding: 0px 20px;
+    /* text-align: center; */
+  }
+  
+  #social-media {
+    /* margin-top: 20px; */
+    /* padding-left: 0px; */
+    margin: 0px auto;
+    width: 285px;
+  }
+
+  #social-media a img{
+  /*padding-right: 30px;*/
+    width: 45px;
+  }
+
+  
+}
+
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
+  #logo-img-mobile{
+    background: url('../images/siteLogo/175x84.png') no-repeat;
+    height: 84px;
+    width: 175px;
+  }
+
+  #header-nav {
+    padding-top:13px; 
+  }
+  .navbar-header {
+    margin: 8px 0px;
+  }
+
+  .navbar-brand {
+    padding: 0px 15px 0px 20px;
+    height: 83px;
+  }
+
+   .navbar-toggle{
+    margin-right: 20px;
+  }
+
+
+  .sectionTitle { 
+    padding: 0px;
+    margin: 70px 10px 35px 10px;  
+    font-size: 6vw;
+    letter-spacing: 1.5px;
+  }
+
+  #aboutSection p {
+    width: auto;
+    padding: 0px 30px;
+    font-size: 4vw;
+    letter-spacing: 1px;
+    line-height: 4.5vw;
+  }
+
+  #aboutVideo iframe {
+    height: 200px;
+  }
+
+  #brandSection .row .column img {
+    max-width: 100px;
+    margin: auto;
+  }
+
+  #productSection .container .row .productDetails {
+      font-size: 4.5vw;
+  }
+
+  #productSection .productImage {
+      padding: 20px 30px;
+  }
+
+  #serviceSection .container .row {
+    margin: 30px 100px;
+  }
+
+  #serviceSection .container .row .column {
+    min-height: 0px;
+  }
+
+  #serviceSection .container .row .column img {
+    padding: 0px 70px;
+  }
+
+  #serviceSection .container .row {
+    margin: 20px 20px;
+  }
+
+  #serviceSection .container .row .column img {
+    padding: 0px 30px;
+  }
+
+  #serviceSection .container .row h2 {
+    margin-bottom: 25px;
+    font-size: 6vw;
+  }
+
+  #serviceSection .container .row p {
+    font-size: 5vw;
+  }
+
+  #clientSection .container .carousel-inner img{
+    height: 220px;
+  }
+
+  #clientSection .container .carousel-inner h3{
+    margin-bottom: 10px;
+    font-size: 3.5vw;
+  }
+
+  #contactSection .container .row #contact_div {
+    padding: 40px 30px;
+  }
+
+  #map-tile iframe {
+    height: 200px;
+  }  
+
+
+  #contactSection .row h1 {
+    /*font-weight: bold;*/
+    font-size: 5.5vw;
+    margin-bottom: 20px;
+  }
+
+  #contactSection .row h2 {
+    font-size: 4.5vw;
+    margin-top: 12px;
+  }
+
+  #information h3 {
+    font-size: 5vw;
+    letter-spacing: 0.3px;
+    margin-top: 13px;
+  }
+
+  #information h2 {
+    margin-bottom: 25px;
+  }
+
+  #emailUs {
+    margin: 50px 20px 0px;
+    padding: 0px 15px;
+  }
+
+  #emailUs input, #emailUs textarea, #emailUs button {
+    font-size: 1.em;
+    /* margin-bottom: 25px; */
+    font-size: 4vw;
+  }
+
+  #social-media {
+    /* margin-top: 20px; */
+    /* padding-left: 0px; */
+    /*margin: 0px auto;*/
+    width: 265px;
+  }
+
+  #social-media a img{
+  /*padding-right: 30px;*/
+    width: 40px;
+  }
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 365px) {
+  
+}
