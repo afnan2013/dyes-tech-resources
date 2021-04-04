@@ -185,15 +185,14 @@ canvas {
 #aboutSection p {
   width: 1190px;
   padding: 10px 30px 10px 30px;
-  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   /* margin-right: 300px; */
-  font-size: 1.7em;
-  color: green;
-  line-height: 40px;
-  font-family: Roboto, sans-serif;
+  font-size: 1.9em;
+  color: #0071BC;
+  line-height: 35px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 
@@ -331,7 +330,7 @@ canvas {
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: #163A1A;
+  background-color: #185772;
   border-top: 0px; 
   color: white;
 }
@@ -892,6 +891,7 @@ canvas {
 
   #map-tile iframe {
     height: 200px;
+    clip-path: circle();
   }  
 
 

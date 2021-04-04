@@ -66,9 +66,9 @@ db.collection('settings').onSnapshot((snapshot) => {
         $("#aboutParagraph").append(doc.data().about);
 
         // Show Video in iframe from firestore
-        $("#aboutVideo").append('<iframe width="100%" height="550px" src="'+doc.data().video
-        + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;'
-        + 'gyroscope; picture-in-picture" allowfullscreen></iframe>');
+        // $("#aboutVideo").append('<iframe width="100%" height="550px" src="'+doc.data().video
+        // + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;'
+        // + 'gyroscope; picture-in-picture" allowfullscreen></iframe>');
 
         // Show Address, Email, Mobile No of contact section from firestore
         $("#contact_div").append('<h1>'+doc.data().address+'</h1><h2>'
@@ -188,7 +188,7 @@ db.collection('services').orderBy('serial').onSnapshot((snapshot) => {
     //insertHtml("#main-content", response);
     snapshot.docs.forEach(doc => {
 
-       var serviceString = '<div class="col-xl-3 col-md-3 col-sm-6 column">'
+       var serviceString = '<div class="col-xl-4 col-md-4 col-sm-6 column">'
                             +'<img src="'+ doc.data().imageUrl +'" class="img-responsive">'
                             +'<h2>'+doc.data().name+'</h2>'
                             +'<div class="serviceDescription"><p>'+doc.data().description+'</div></p></div>';
