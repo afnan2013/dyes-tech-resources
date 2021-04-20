@@ -29,11 +29,11 @@ canvas {
 }
 
 #logo-img {
-  background: url('../images/nav-bar-logo.PNG') no-repeat;
+  background: url('../images/nav-bar-logo.png') no-repeat;
   /*background: url('../images/siteLogo/logo-02.png') no-repeat;*/
   margin: 10px 15px 10px 200px;
-  width: 237px;
-  height: 224px;
+  width: 325px;
+  height: 117px;
 }
 
 .navbar-brand {
@@ -82,9 +82,10 @@ canvas {
 }
 
 #nav-list {
-  margin-top: 180px;
+  margin-top: 100px;
   font-size: 1.4em;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
 #nav-list a {
@@ -121,7 +122,7 @@ canvas {
 }
 
 .navbar-header{
-  margin: 10px 0px 20px 0px
+  margin: 55px 0px 20px 0px
 }
 
 .navbar-header button.navbar-toggle, .navbar-header button.navbar-toggle span {
@@ -159,7 +160,7 @@ canvas {
   flex-wrap : wrap; /* Change the logo position according to devices */
   column-gap : 15px;
   row-gap : 15px;
-  width: 80%;
+  width: 100%;
 }
 /* Initial 5 logos in a row with 15px padding*/
 #brandSection .row .column {
@@ -167,8 +168,8 @@ canvas {
 }
 
 #brandSection .row .column img{
-  max-height: 140px;
-  max-width: 200px;
+  max-height: 170px;
+  max-width: 310px;
   margin: auto;
 }
 
@@ -268,6 +269,8 @@ canvas {
 
 #serviceSection .container .row .column img{
   padding: 20px;
+  margin: auto;
+  max-height: 200px;
 }
 
 #serviceSection .container .row .column h2 {
@@ -426,16 +429,25 @@ canvas {
 }
 
 /********** Mediam- Large devices only **********/
-@media (min-width: 1200px) and (max-width: 1500px) {
+@media (min-width: 1200px) and (max-width: 1600px) {
   /* HEADER PAGE */
   
   #logo-img {
-    margin: 10px 15px 10px 100px;
+    background: url('../images/nav-bar-logo-medium.png') no-repeat;
+    margin: 20px 15px 10px 100px;
+    width: 290px;
+    height: 104px;
   }
 
   #nav-list {
     font-size: 1.1em;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+  }
+
+  #nav-list a {
+    /* color: #004044; */
+    /* text-align: center; */
+    margin-left: 10px;
   }
 
   .navbar-info {
@@ -458,13 +470,24 @@ canvas {
   /* HEADER PAGE */
 
   #logo-img {
-    background: url('../images/nav-bar-logo-medium.png') no-repeat;
+    background: url('../images/nav-bar-logo-small.png') no-repeat;
     /*background: url('../images/siteLogo/logo-02.png') no-repeat;*/
     margin: 25px 15px 10px 50px;
-    width: 260px;
-    height: 121px;
+    width: 220px;
+    height: 79px;
   }
   
+  #nav-list {
+    margin-top: 85px;
+    font-size: 1.1em;
+  }
+
+  #nav-list a {
+    /* color: #004044; */
+    /* text-align: center; */
+    margin-left: 5px;
+  }
+
   .navbar-info {
     margin-right: 40px;
     font-size: 1.1em;
@@ -526,7 +549,7 @@ canvas {
   .navbar-info  .navbar-info-email {
       /* padding-right: 18px; */
     text-align: right;
-    padding-right: 30px;
+    padding-right: 15px;
   }
 
   .navbar-info {
@@ -549,9 +572,15 @@ canvas {
 
   #nav-list {
     margin-top: 0px;
-    font-size: 1.0em;
+    font-size: 1.1em;
     letter-spacing: 1px;
   }
+
+  #nav-list a {
+    margin-left: 10px;
+  }
+
+  
 
   #aboutSection p {
     width: 750px;
@@ -621,14 +650,21 @@ canvas {
   #header-nav{
     margin: 0px 0px;
     padding-left: 15px; 
-    padding-right: 15px; 
-    background-color: #379C41;
+    padding-right: 15px;
+    padding-top: 0px; 
+    /*background-color: #379C41;*/
   }
 
   #logo-img-mobile{
-    background: url('../images/siteLogo/225X104_white.png') no-repeat;
-    height: 104px;
-    width: 233px;
+    background: url(../images/nav-bar-logo-mobile.png) no-repeat;
+    width: 250px;
+    height: 90px;
+    margin: 30px 0px 0px 0px;
+  }
+
+
+  .navbar-header{
+    margin-top: 0px;
   }
 
   .navbar-info {
@@ -670,6 +706,10 @@ canvas {
 
   .navbar-toggle{
     margin-right: 40px;
+  }
+
+  .navbar-header button.navbar-toggle, .navbar-header button.navbar-toggle span {
+    border: 1px solid #185772;
   }
 
   #call-btn > a {
@@ -793,13 +833,14 @@ canvas {
 @media (max-width: 479px) {
 
   #logo-img-mobile{
-    background: url('../images/siteLogo/175x84.png') no-repeat;
-    height: 84px;
-    width: 175px;
+    background: url(../images/nav-bar-logo-x-small.png) no-repeat;
+    width: 190px;
+    height: 68px;
+    margin: 5px 0px 0px 0px;
   }
 
   #header-nav {
-    padding-top:13px; 
+    padding-top:5px; 
   }
   .navbar-header {
     margin: 8px 0px;
@@ -814,6 +855,15 @@ canvas {
     margin-right: 20px;
   }
 
+  .navbar-header button.navbar-toggle {
+    /* clear: both; */
+    /* background: #EBEDEF; */
+    margin-top: -48px;
+  }
+
+  .navbar-header button.navbar-toggle, .navbar-header button.navbar-toggle span {
+    border: 1px solid #185772;
+  }
 
   .sectionTitle { 
     padding: 0px;
