@@ -754,7 +754,7 @@ canvas {
 
   #brandSection .row .column img {
     /*max-height: 140px;*/
-    max-width: 120px;
+    max-width: 180px;
   }
 
   #productSection {
@@ -788,12 +788,17 @@ canvas {
 
   #serviceSection .container .row {
     display: block;
-    margin: 30px 100px;
+    margin: 30px 60px;
   }
 
   #serviceSection .container .row .column {
     min-height: 0px;
     padding: 50px 50px;
+    font-size: 3.5vw;
+  }
+
+  #serviceSection .container .row .column h2{
+    font-size: 4.5vw;
   }
 
   #serviceSection .container .row .column img {
@@ -880,7 +885,7 @@ canvas {
   .sectionTitle { 
     padding: 0px;
     margin: 70px 10px 35px 10px;  
-    font-size: 6vw;
+    font-size: 8vw;
     letter-spacing: 1.5px;
   }
 
@@ -897,7 +902,7 @@ canvas {
   }
 
   #brandSection .row .column img {
-    max-width: 100px;
+    max-width: 140px;
     margin: auto;
   }
 
@@ -909,16 +914,8 @@ canvas {
       padding: 20px 30px;
   }
 
-  #serviceSection .container .row {
-    margin: 30px 100px;
-  }
-
   #serviceSection .container .row .column {
-    min-height: 0px;
-  }
-
-  #serviceSection .container .row .column img {
-    padding: 0px 70px;
+    padding: 30px 20px;
   }
 
   #serviceSection .container .row {
@@ -926,12 +923,12 @@ canvas {
   }
 
   #serviceSection .container .row .column img {
-    padding: 0px 30px;
+    padding: 25px 30px;
   }
 
-  #serviceSection .container .row h2 {
+  #serviceSection .container .row .column h2 {
     margin-bottom: 25px;
-    font-size: 6vw;
+    font-size: 6.5vw;
   }
 
   #serviceSection .container .row p {
