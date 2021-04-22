@@ -1,23 +1,23 @@
 
 
-$(function () { // Same as document.addEventListener("DOMContentLoaded"...  
-  // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
-  $("#navbarToggle").blur(function(event) {
-    var screenWidth = window.innerWidth;
-    if(screenWidth < 768){
-      // same as navbarToggle
-      $("#collapsable-nav").collapse('hide');
-    }
-  });
+// $(function () { // Same as document.addEventListener("DOMContentLoaded"...  
+//   // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
+//   $("#navbarToggle").blur(function(event) {
+//     var screenWidth = window.innerWidth;
+//     if(screenWidth < 768){
+//       // same as navbarToggle
+//       $("#collapsable-nav").collapse('hide');
+//     }
+//   });
 
-  // In Firefox and Safari, the click event doesn't retain the focus
-  // on the clicked button. Therefore, the blur event will not fire on
-  // user clicking somewhere else in the page and the blur event handler
-  // which is set up above will not be called.
-  $("#navbarToggle").click(function (event) {
-    $(event.target).focus();
-  });
-});
+//   // In Firefox and Safari, the click event doesn't retain the focus
+//   // on the clicked button. Therefore, the blur event will not fire on
+//   // user clicking somewhere else in the page and the blur event handler
+//   // which is set up above will not be called.
+//   $("#navbarToggle").click(function (event) {
+//     $(event.target).focus();
+//   });
+// });
 
 
 
@@ -33,11 +33,11 @@ $("#navBrandButton").click(function() {
     }, 800);
 });
 
-$("#navProductButton").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#productSection").offset().top
-    }, 800);
-});
+// $("#navProductButton").click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#productSection").offset().top
+//     }, 800);
+// });
 
 $("#navServiceButton").click(function() {
     $('html, body').animate({
