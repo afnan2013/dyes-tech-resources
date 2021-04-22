@@ -29,8 +29,7 @@ canvas {
 }
 
 #logo-img {
-  background: url('../images/nav-bar-logo.png') no-repeat;
-  /*background: url('../images/siteLogo/logo-02.png') no-repeat;*/
+  background: url('../images/nav-bar-logo.PNG') no-repeat;
   margin: 10px 15px 10px 200px;
   width: 325px;
   height: 117px;
