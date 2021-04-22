@@ -609,16 +609,17 @@ canvas {
   #productSection .container .row .productImage img {
     max-width: 340px;
     max-height: 340px;
+
   }
 
   #serviceSection .container .row {
-    display: block;
-    margin: 30px 50px;
+    display: flex;
+    margin: 30px 5px;
   }
 
-  #serviceSection .container .row .column {
+  /*#serviceSection .container .row .column {
     min-height: 568px;
-  }
+  }*/
 
 
   #serviceSection .container .row .column h2 {
@@ -630,6 +631,10 @@ canvas {
     /* text-align: justify; */
     /* padding: 0px 10px; */
     font-size: 0.85em;
+  }
+
+  #serviceSection .container .row .column img {
+    max-height: 170px;
   }
 
   #clientSection .container .carousel-inner h3{
@@ -680,16 +685,18 @@ canvas {
   }
 
   #nav-list a {
-    color: #FFF;
+    color: #185772;
     text-align: center;
   }
 
   #nav-list a:hover {
-    color: #004044;
+    color: #FFF;
+    background: #185772;
   }
   
   #nav-list .active a {
-    color: #004044;
+    color: #FFF;
+    background: #185772;
   }
   
 
@@ -715,7 +722,7 @@ canvas {
   #call-btn > a {
     font-size: 1.5em;
     display: block;
-    background-color: #0C2B25;
+    background-color: #185772;
     /*border: 2px solid #fff;*/
     color: white;
     margin: 4px 10px;
@@ -786,11 +793,16 @@ canvas {
 
   #serviceSection .container .row .column {
     min-height: 0px;
+    padding: 50px 50px;
   }
 
   #serviceSection .container .row .column img {
-    padding: 0px 30px;
+    padding: 20px 30px;
+    max-height: 220px;
+    
   }
+
+  
 
   #clientSection .container .carousel-inner h3{
     margin-bottom: 0px;

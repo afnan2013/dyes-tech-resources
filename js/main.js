@@ -1,4 +1,26 @@
 
+
+$(function () { // Same as document.addEventListener("DOMContentLoaded"...  
+  // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
+  $("#navbarToggle").blur(function(event) {
+    var screenWidth = window.innerWidth;
+    if(screenWidth < 768){
+      // same as navbarToggle
+      $("#collapsable-nav").collapse('hide');
+    }
+  });
+
+  // In Firefox and Safari, the click event doesn't retain the focus
+  // on the clicked button. Therefore, the blur event will not fire on
+  // user clicking somewhere else in the page and the blur event handler
+  // which is set up above will not be called.
+  $("#navbarToggle").click(function (event) {
+    $(event.target).focus();
+  });
+});
+
+
+
 $("#navAboutButton").click(function() {
     $('html, body').animate({
         scrollTop: $("#aboutSection").offset().top
@@ -188,7 +210,7 @@ db.collection('services').orderBy('serial').onSnapshot((snapshot) => {
     //insertHtml("#main-content", response);
     snapshot.docs.forEach(doc => {
 
-       var serviceString = '<div class="col-xl-4 col-md-4 col-sm-6 column">'
+       var serviceString = '<div class="col-xl-4 col-md-4 col-sm-4 column">'
                             +'<img src="'+ doc.data().imageUrl +'" class="img-responsive">'
                             +'<h2>'+doc.data().name+'</h2>'
                             +'<div class="serviceDescription"><p>'+doc.data().description+'</div></p></div>';
@@ -197,12 +219,16 @@ db.collection('services').orderBy('serial').onSnapshot((snapshot) => {
 
        $(function () {
 
-           $("#service_div").click(function() {
+           $("#service_div").click(function(event) {
              $(".serviceDescription").css("display", "block");
            }); 
 
-           $(".serviceDescription").blur(function(event) {
+           $("#service_div").blur(function(event) {
+                var screenWidth = window.innerWidth;
+                if(screenWidth > 768){
+                  console.log("The function is firing");
                  $(".serviceDescription").css("display", "none");
+                } 
            }); 
        });
     });
