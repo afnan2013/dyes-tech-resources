@@ -274,6 +274,7 @@ canvas {
 }
 
 #serviceSection .container .row .column h2 {
+  font-weight: bold;
   margin-bottom: 25px;
 }
 
@@ -675,7 +676,7 @@ canvas {
   }
 
   .navbar-nav{
-    margin: 7.5px -20px;
+    margin: 7.5px 0px;
   }
 
   .navbar-collapse {
@@ -701,6 +702,7 @@ canvas {
   #nav-list a {
     color: #185772;
     text-align: center;
+    margin-left: 0px;
   }
 
   #nav-list a:hover {
